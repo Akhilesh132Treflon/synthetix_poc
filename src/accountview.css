@@ -1,0 +1,90 @@
+/* AccountOverview.css */
+
+/* Base styling for the entire component */
+.account-overview {
+    background-color: #f5f5f5; /* Subdued background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the error message */
+  .account-overview.error {
+    background-color: #ffcccc; /* Light red background for errors */
+    border: 1px solid #ff0000; /* Red border for errors */
+    color: #ff0000; /* Red text for errors */
+  }
+  
+  /* Header styling */
+  .account-overview h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+  }
+  
+/* AccountOverview.css */
+
+/* ... (other styles) */
+
+/* AccountOverview.css */
+
+/* ... (other styles) */
+
+/* Data item styling */
+.data-item {
+    margin: 10px 0;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space items evenly within the container */
+  }
+  
+  /* Label styling */
+  .label {
+    font-weight: bold;
+    color: #555; /* Slightly darker text color */
+  }
+  
+  /* Value styling */
+  .value {
+    color: #333; /* Dark text color */
+    font-size: 1.2rem;
+  }
+  
+  .account-overview {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .account-overview h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .free-margin, .profit-loss {
+    margin-top: 20px;
+  }
+  
+  .amount {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Add background color to sections if needed */
+  .free-margin {
+    background-color: #f2f2f2;
+  }
+  
+  .profit-loss {
+    background-color: #e0e0e0;
+  }
+  .mine{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

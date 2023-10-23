@@ -1,0 +1,44 @@
+/* PositionOverview.css */
+
+/* Base styling for the entire component */
+.position-overview {
+    background-color: #f5f5f5; /* Subdued background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the error message */
+  .position-overview.error {
+    background-color: #ffcccc; /* Light red background for errors */
+    border: 1px solid #ff0000; /* Red border for errors */
+    color: #ff0000; /* Red text for errors */
+  }
+  
+  /* Header styling */
+  .position-overview h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+  }
+  
+  /* Data item styling */
+  .data-item {
+    margin: 10px 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly within the container */
+    align-items: center; /* Vertically center items */
+  }
+  
+  /* Label styling */
+  .label {
+    font-weight: bold;
+    color: #555; /* Slightly darker text color */
+  }
+  
+  /* Value styling */
+  .value {
+    color: #333; /* Dark text color */
+    font-size: 1.2rem;
+  }
+  

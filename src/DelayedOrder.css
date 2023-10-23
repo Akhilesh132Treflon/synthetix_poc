@@ -1,0 +1,74 @@
+/* DelayedOrder.css */
+
+/* Base styling for the entire component */
+.delayed-order {
+  background-color: #f5f5f5; /* Subdued background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the error message */
+.delayed-order.error {
+  background-color: #ffcccc; /* Light red background for errors */
+  border: 1px solid #ff0000; /* Red border for errors */
+  color: #ff0000; /* Red text for errors */
+}
+
+/* Header styling */
+.delayed-order h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+}
+
+/* Data item styling */
+.data-item {
+  margin: 10px 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly within the container */
+  align-items: center; /* Vertically center items */
+}
+.test{
+    display: flex;
+}
+
+/* Label styling */
+.label {
+  font-weight: bold;
+  color: #555; /* Slightly darker text color */
+}
+
+/* Value styling */
+.value {
+  color: #333; /* Dark text color */
+  font-size: 1.2rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+
+}
+.red-button {
+  background-color: #ff0000e9; /* Blue button background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+
+/* Styling for buttons on hover */
+.red-button :hover {
+  background-color: #ff3300; /* Blue button background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

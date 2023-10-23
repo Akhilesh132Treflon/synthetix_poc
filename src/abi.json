@@ -1,0 +1,449 @@
+{
+    "abi":[
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_desiredFillPrice",
+                    "type": "uint256"
+                }
+            ],
+            "name": "_perpsV2ClosePosition",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bytes[]",
+                    "name": "priceUpdateData",
+                    "type": "bytes[]"
+                }
+            ],
+            "name": "excuteOrder",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "marginAsset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "futuresMarketManager",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "available",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "required",
+                    "type": "uint256"
+                }
+            ],
+            "name": "InsufficientFreeMargin",
+            "type": "error"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "market",
+                    "type": "address"
+                }
+            ],
+            "name": "minMargin",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "int256",
+                    "name": "_amount",
+                    "type": "int256"
+                }
+            ],
+            "name": "modifyAccountMargin",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                }
+            ],
+            "name": "perpsV2CancelDelayedOrder",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "_amount",
+                    "type": "int256"
+                }
+            ],
+            "name": "perpsV2ModifyMargin",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "_sizeDelta",
+                    "type": "int256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_desiredFillPrice",
+                    "type": "uint256"
+                }
+            ],
+            "name": "perpsV2SubmitDelayedOrder",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                }
+            ],
+            "name": "perpsV2WithdrawAllMargin",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "receive"
+        },
+        {
+            "inputs": [],
+            "name": "committedMargin",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "freeMargin",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "GELATO",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                }
+            ],
+            "name": "getAssetPrice",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "invalid",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_marketKey",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "getDelayedOrder",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "bool",
+                            "name": "isOffchain",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "sizeDelta",
+                            "type": "int128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "desiredFillPrice",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "targetRoundId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "commitDeposit",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "keeperDeposit",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "executableAtTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "intentionTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "trackingCode",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "internalType": "struct IPerpsV2MarketConsolidated.DelayedOrder",
+                    "name": "order",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                }
+            ],
+            "name": "getMarkeetKey",
+            "outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_marketKey",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "getPerpsV2Market",
+            "outputs": [
+                {
+                    "internalType": "contract IPerpsV2MarketConsolidated",
+                    "name": "market",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_marketKey",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "getPosition",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint64",
+                            "name": "id",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "lastFundingIndex",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "margin",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "lastPrice",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "int128",
+                            "name": "size",
+                            "type": "int128"
+                        }
+                    ],
+                    "internalType": "struct IPerpsV2MarketConsolidated.Position",
+                    "name": "position",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "market",
+                    "type": "address"
+                }
+            ],
+            "name": "getprice",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "OPS",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_market",
+                    "type": "address"
+                }
+            ],
+            "name": "PNL",
+            "outputs": [
+                {
+                    "internalType": "int256",
+                    "name": "pnl",
+                    "type": "int256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "invalid",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}

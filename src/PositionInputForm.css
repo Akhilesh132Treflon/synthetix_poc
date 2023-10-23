@@ -1,0 +1,87 @@
+/* PositionInputForm.css */
+
+/* Container for the entire component */
+.position-input-form {
+  background-color: #f5f5f5; /* Subdued background color */
+  padding: 20px;
+  border-radius: 10px;
+margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Set a maximum width for the component */
+  margin: 0 auto; /* Center the component horizontally */
+  margin-bottom: 26px;
+
+}
+
+/* Header styling */
+.position-input-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+}
+
+/* Styling for input fields */
+.input-field {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Styling for buttons */
+.open-position-button {
+  background-color: #30b300; /* Blue button background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Styling for buttons on hover */
+.open-position-button:hover {
+  background-color: #30b300; /* Darker blue on hover */
+}
+
+/* PositionInputForm.css */
+
+/* ... (other styles) */
+
+/* Styling for input fields */
+.input-field {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Styling for input labels */
+.input-label {
+  display: block;
+  font-weight: bold;
+  color: #555; /* Slightly darker text color */
+}
+
+/* Styling for input elements */
+.input-element {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #333; /* Dark text color */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+.position-overview {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
